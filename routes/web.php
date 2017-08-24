@@ -11,6 +11,24 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('teste', function () {
+    return view('welcome');
+});
+
+Route::get('/teste', function () {
+    return view('welcome');
+});
+
+
+
+/*
+Route::group(['prefix' => 'api'], function () {
+    Route::get('pacotes', ['as' => 'api.pacotes', 'uses' => 'PacoteController@listar']);
+});
+*/
