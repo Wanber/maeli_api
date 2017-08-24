@@ -4,6 +4,7 @@ namespace Maeli\Providers;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,6 +16,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+
+        //Passport::tokensExpireIn(Carbon::now()->addDays(15));
+        //Passport::refreshTokensExpireIn(Carbon::now()->addDays(30));
     }
 
     /**

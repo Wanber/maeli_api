@@ -19,6 +19,6 @@ class PacoteController extends Controller
 
     function listar()
     {
-        return response($this->pacote->all(), 200);
+        return response()->json($this->pacote->all(), 200);
     }
 }

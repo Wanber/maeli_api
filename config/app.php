@@ -178,6 +178,8 @@ return [
         Maeli\Providers\EventServiceProvider::class,
         Maeli\Providers\RouteServiceProvider::class,
 
+        //vendor
+        Laravel\Passport\PassportServiceProvider::class,
     ],
 
     /*
